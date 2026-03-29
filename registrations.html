@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register| YaadMart</title>
+</head>
+<body>
+
+<style>
+   body
+   {
+    font-family: Arial;
+    background-color: #f4f9f4;
+    text-align: center;
+   }
+   
+   header 
+   {
+    background-color: #009b3a;
+    color: white;
+    padding: 20px;
+    margin-buttom: 20px;
+   }
+   
+   h2
+   {
+    color: #ffcc00
+   }
+   
+   button.btn 
+   {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    }
+
+</style>
+<header>
+	<h2>Registration</h2>
+        <p>Please Register</p>
+<form name="frm1" action="login.html" method="post">
+
+<br><br>
+	<lable> Full Name:</lable>
+	<input type="text" name="Fname" placeholder="FullName"required/>
+
+<br><br>
+
+	<lable> Date Of Birth:</lable>
+	<input type="date" name="DOB" required/>
+
+<br><br>
+
+	<lable> Email:</lable>
+	<input type="email" name="email" placeholder="Email"/>
+
+<br><br>
+
+	<lable> Username: </lable>
+	<input type="text" name="username" maxlength="7" minlength="4" placeholder="Username" required/>
+
+<br><br>
+
+	<lable> Password:</lable>
+	<input type="password" name="password" maxlength="10" minlength="7" placeholder="Password" required/>
+
+<br><br>
+
+<button type="submit" class="btn">login</button>
+<p id="RegistrationError" class="ErrorMessage"></p>
+
+</form>
+       
+</header>
+
+
+
+
+
+</body>
+</html>
+

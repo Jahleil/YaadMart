@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>products | YaadMart</title>
+     <link rel="stylesheet" href="../styles.css">
+</head>
+
+<header> 
+      <h1>Products</h1>
+</header>
+
+<section class="products-container">
+ 
+    <div class="products">
+         <img src="../Assets/jerk.png" width="200" height="200">
+	 <h3>Jerk Seasoning 2units</h3>
+	 <p>Price: $2000</P>
+         <button onclick="addToCart('Jerk Seasoning',2000)">Add to cart</button></br></br></br>
+    </div>
+
+    <div class="products">
+         <img src="../Assets/cheese.png" alt="Taste Cheese" width="200" height="200">
+	 <h3>Taste Cheese</h3>
+	 <p>Price: $8000</P>
+	 <button onclick="addToCart('Taste Cheese',8000)">Add to cart</button></br></br></br>
+
+    </div>
+
+
+    <div class="products">
+         <img src="../Assets/snacks.png" alt="Snacks Mix" width="200" height="200">
+         <h3>Snacks Mix</h3>
+	 <p>Price: $10000</P>
+	 <button onclick="addToCart('Snacks Mix',10000)">Add to cart</button></br></br></br>
+    </div>
+
+    <div class="products">
+         <img src="../Assets/curry.png" alt="Curry" width="200" height="200">
+         <h3>Curry</h3>
+         <p>Price: $2500</P>
+         <button onclick="addToCart('Curry',2500)">Add to cart</button></br></br></br>
+    </div>
+
+    <div class="products">
+         <img src="../Assets/bun.png" alt="bun" width="200" height="200">
+         <h3>Bun</h3>
+	 <p>Price: $300</P>
+         <button onclick="addToCart('Bun',300)">Add to cart</button></br></br></br>
+    </div>
+
+    <div class="products">
+         <img src="../Assets/rum.png" alt="rum" width="200" height="200">
+         <h3>Rum Set</h3>
+	 <p>Price: $20000</P>
+	 <button onclick="addToCart('Rum Set',20000)">Add to cart</button></br></br></br>
+    </div>
+
+    <div class="products">
+         <img src="../Assets/gin.png" alt="rum" width="200" height="200">
+	 <h3>Ginger Beer</h3>
+	 <p>Price: $500</P>
+	 <button onclick="addToCart('Ginger Beer',500)">Add to cart</button></br></br></br>
+    </div>
+
+    <div class="products">
+         <img src="../Assets/coffee.png" alt="rum" width="200" height="200">
+         <h3>Ground Coffee</h3>
+         <p>Price: $3000</P>
+	 <button onclick="addToCart('Ground Coffee',3000)">Add to cart</button></br></br></br>
+    </div>
+
+    <div class="products">
+         <img src="../Assets/biscuits.png" alt="rum" width="200" height="200">
+	 <h3>Ginger Biscuits</h3>
+         <p>Price: $150</P>
+         <button onclick="addToCart('Ginger Biscuit',150)">Add to cart</button></br></br></br>
+    </div>
+
+</section>
+         
+<script>
+     let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function addToCart(name, price){
+      let item = { name, price };
+      cart.push(item);
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      alert(name + " added to cart!");
+}    
+</script>
+
+<br><br>
+
+<footer>
+       	<a href="cart.html">View Cart</a>                      
+</footer>
+
+
+</body>
+</html>
